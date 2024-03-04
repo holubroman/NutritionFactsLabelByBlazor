@@ -1,4 +1,4 @@
-﻿@page "/"
+@page "/"
 @using Microsoft.AspNetCore.Http
 @inject HttpClient Http
 @inject IWebHostEnvironment Environment
@@ -29,7 +29,7 @@
     }
     else
     {
-        @if (nutritionFacts != null)
+        @if (filteredNutritionFacts != null)
         {
             <table class="table">
                 <thead>
@@ -41,7 +41,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @if (filteredNutritionFacts != null && filteredNutritionFacts.Count() == 0)
+                    @if (filteredNutritionFacts.Count() == 0)
                     {
                         <tr><td>No Matched Data!</td></tr>
                     }
@@ -60,7 +60,6 @@
                     }
                 </tbody>
             </table>
-
         }
     }
 
@@ -92,12 +91,12 @@
 
     public class NutritionFact
     {
-        public string Nutrient { get; set; }
+        public string Nutrient { get; set; } = string.Empty;
 
-        public string DailyValueForLabel { get; set; }
+        public string DailyValueForLabel { get; set; } = string.Empty;
 
-        public string HighestRDAOfDRI { get; set; }
+        public string HighestRDAOfDRI { get; set; } = string.Empty;
 
-        public string Unit { get; set; }
+        public string Unit { get; set; } = string.Empty;
     }
 }
