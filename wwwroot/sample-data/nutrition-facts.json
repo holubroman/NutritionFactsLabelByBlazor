@@ -1,0 +1,158 @@
+[
+  {
+    "nutrient": "Vitamin A",
+    "dailyValueForLabel": "5,000",
+    "highestRDAOfDRI": "3,000",
+    "unit": "IU"
+  },
+  {
+    "nutrient": "Vitamin C",
+    "dailyValueForLabel": "60",
+    "highestRDAOfDRI": "90",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Thiamine (Vitamin B1)",
+    "dailyValueForLabel": "1.5",
+    "highestRDAOfDRI": "1.2",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Riboflavin (Vitamin B2)",
+    "dailyValueForLabel": "1.7",
+    "highestRDAOfDRI": "1.3",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Niacin(Vitamin B3)",
+    "dailyValueForLabel": "20",
+    "highestRDAOfDRI": "16",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Pantothenic acid (Vitamin B5)",
+    "dailyValueForLabel": "10",
+    "highestRDAOfDRI": "5",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Pyridoxine (Vitamin B6)",
+    "dailyValueForLabel": "2",
+    "highestRDAOfDRI": "1.7",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Folate (Vitamin B9)",
+    "dailyValueForLabel": "400",
+    "highestRDAOfDRI": "400",
+    "unit": "μg"
+  },
+  {
+    "nutrient": "Biotin (Vitamin B7)",
+    "dailyValueForLabel": "300",
+    "highestRDAOfDRI": "30",
+    "unit": "μg"
+  },
+  {
+    "nutrient": "Cyanocobalamin (Vitamin B12)",
+    "dailyValueForLabel": "6",
+    "highestRDAOfDRI": "2.4",
+    "unit": "μg"
+  },
+  {
+    "nutrient": "Vitamin D",
+    "dailyValueForLabel": "400",
+    "highestRDAOfDRI": "600",
+    "unit": "IU"
+  },
+  {
+    "nutrient": "Vitamin E",
+    "dailyValueForLabel": "12",
+    "highestRDAOfDRI": "15",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Vitamin K",
+    "dailyValueForLabel": "80",
+    "highestRDAOfDRI": "120",
+    "unit": "μm"
+  },
+  {
+    "nutrient": "Calcium",
+    "dailyValueForLabel": "1,000",
+    "highestRDAOfDRI": "1,300",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Folate (Vitamin B9)",
+    "dailyValueForLabel": "400",
+    "highestRDAOfDRI": "400",
+    "unit": "μm"
+  },
+  {
+    "nutrient": "Folate (Vitamin B9)",
+    "dailyValueForLabel": "400",
+    "highestRDAOfDRI": "400",
+    "unit": "μm"
+  },
+  {
+    "nutrient": "Iron",
+    "dailyValueForLabel": "18",
+    "highestRDAOfDRI": "18",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "lodine",
+    "dailyValueForLabel": "150",
+    "highestRDAOfDRI": "150",
+    "unit": "μg"
+  },
+  {
+    "nutrient": "Magnesium",
+    "dailyValueForLabel": "400",
+    "highestRDAOfDRI": "420",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Zinc",
+    "dailyValueForLabel": "15",
+    "highestRDAOfDRI": "11",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Selenium",
+    "dailyValueForLabel": "70",
+    "highestRDAOfDRI": "55",
+    "unit": "μg"
+  },
+  {
+    "nutrient": "Copper",
+    "dailyValueForLabel": "2",
+    "highestRDAOfDRI": "0.9",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Manganese",
+    "dailyValueForLabel": "2",
+    "highestRDAOfDRI": "2.3",
+    "unit": "mg"
+  },
+  {
+    "nutrient": "Chromium",
+    "dailyValueForLabel": "120",
+    "highestRDAOfDRI": "35",
+    "unit": "μg"
+  },
+  {
+    "nutrient": "Molybdenum",
+    "dailyValueForLabel": "75",
+    "highestRDAOfDRI": "45",
+    "unit": "μg"
+  },
+  {
+    "nutrient": "Chloride",
+    "dailyValueForLabel": "3,4000",
+    "highestRDAOfDRI": "2,300",
+    "unit": "mg"
+  }
+]

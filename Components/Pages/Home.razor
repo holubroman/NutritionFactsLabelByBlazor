@@ -1,0 +1,103 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Http
+@inject HttpClient Http
+@inject IWebHostEnvironment Environment
+@inject NavigationManager UriHelper
+@using System.Net.Http.Json
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+<PageTitle>Home</PageTitle>
+
+<div class="home-page">
+    <h1 class="text-center">Welcome to Nutrition Facts Support!</h1>
+    <div class="search-container">
+        <div class="search">
+            <div class="row">
+                <div class="search-box">
+                    <i class='bx bx-search-alt'></i>
+                    <input type="text" placeholder="Nutrition" @bind="searchQuery">
+                    <button @onclick="GetNutritionFacts">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (isLoading == true)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        @if (nutritionFacts != null)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>NUTRITION</th>
+                        <th>DAILY VALUE</th>
+                        <th>HIGHTEST RDAO</th>
+                        <th>UNIT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (filteredNutritionFacts != null && filteredNutritionFacts.Count() == 0)
+                    {
+                        <tr><td>No Matched Data!</td></tr>
+                    }
+                    else
+                    {
+                        @foreach (var nutritionFact in filteredNutritionFacts)
+                        {
+                            <tr>
+                                <td>@nutritionFact.Nutrient</td>
+                                <td>@nutritionFact.DailyValueForLabel</td>
+                                <td>@nutritionFact.HighestRDAOfDRI</td>
+                                <td>@nutritionFact.Unit</td>
+                            </tr>
+                        }
+                        
+                    }
+                </tbody>
+            </table>
+
+        }
+    }
+
+
+</div>
+
+@code {
+    private string? searchQuery;
+
+    private NutritionFact[]? nutritionFacts;
+
+    private IEnumerable<NutritionFact>? filteredNutritionFacts;
+
+    public bool isLoading = false;
+
+    private async void GetNutritionFacts()
+    {
+        isLoading = true;
+        await Task.Delay(500);
+        string serverAddress = UriHelper.BaseUri;
+        nutritionFacts = await Http.GetFromJsonAsync<NutritionFact[]>(serverAddress + "/sample-data/nutrition-facts.json");
+        filteredNutritionFacts =
+            from nutritionFact in nutritionFacts
+            where nutritionFact.Nutrient.Contains(searchQuery ?? "")
+            select nutritionFact;
+        isLoading = false;
+        StateHasChanged();
+    }
+
+    public class NutritionFact
+    {
+        public string Nutrient { get; set; }
+
+        public string DailyValueForLabel { get; set; }
+
+        public string HighestRDAOfDRI { get; set; }
+
+        public string Unit { get; set; }
+    }
+}
