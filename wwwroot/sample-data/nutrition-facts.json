@@ -18,6 +18,12 @@
     "unit": "mg"
   },
   {
+    "nutrient": "Vitamin PP",
+    "dailyValueForLabel": "60",
+    "highestRDAOfDRI": "90",
+    "unit": "mg"
+  },
+  {
     "nutrient": "Riboflavin (Vitamin B2)",
     "dailyValueForLabel": "1.7",
     "highestRDAOfDRI": "1.3",
