@@ -24,12 +24,6 @@
     "unit": "mg"
   },
   {
-    "nutrient": "Riboflavin (Vitamin B2)",
-    "dailyValueForLabel": "1.7",
-    "highestRDAOfDRI": "1.3",
-    "unit": "mg"
-  },
-  {
     "nutrient": "Niacin(Vitamin B3)",
     "dailyValueForLabel": "20",
     "highestRDAOfDRI": "16",
