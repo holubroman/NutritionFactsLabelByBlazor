@@ -36,6 +36,12 @@
     "unit": "mg"
   },
   {
+    "nutrient": "Niacin(Vitamin B3)",
+    "dailyValueForLabel": "20",
+    "highestRDAOfDRI": "16",
+    "unit": "mg"
+  },
+  {
     "nutrient": "Pyridoxine (Vitamin B6)",
     "dailyValueForLabel": "2",
     "highestRDAOfDRI": "1.7",
